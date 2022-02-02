@@ -1,2 +1,3 @@
-# apache-apisix-katacoda
-Apache APISIX scenarios on KataCoda
+# Apache APISIX Katacoda scenarios
+
+Apache APISIX scenarios on Katacoda
