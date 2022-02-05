@@ -1,0 +1,35 @@
+{
+  "title": "Test Apache APISIX Scenario",
+  "description": "This is a test scenario. It may contain bugs. Actual tutorials are still in process.",
+  "difficulty": "Beginner",
+  "time": "10 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Install Apache APISIX",
+        "text": "step1.md"
+      },
+      {
+        "title": "Create a Route",
+        "text": "step2.md"
+      },
+      {
+        "title": "Validation",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "foreground.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}
