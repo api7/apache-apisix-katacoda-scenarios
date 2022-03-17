@@ -1,0 +1,26 @@
+name: Validate Katacoda scenarios
+
+concurrency:
+  group: validate-${{ github.head_ref }}
+  cancel-in-progress: true
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Katacoda CLI
+        run: sudo npm i katacoda-cli --global
+
+      - name: Validate Katacoda Scenarios
+        run: katacoda validate:all --repo=${{ github.workspace }}
